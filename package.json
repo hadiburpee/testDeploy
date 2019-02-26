@@ -1,0 +1,30 @@
+{
+  "name": "project-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "if-env NODE_ENV=production && yarn run start:prod || yarn run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn run client\"",
+    "client": "cd client && yarn run start",
+    "install": "cd client && yarn install",
+    "build": "cd client && yarn build",
+    "heroku-postbuild": "cd client && yarn run build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "bootstrap": "^4.3.1",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "mdbreact": "^4.10.0",
+    "mongoose": "^5.4.10",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "reactstrap": "^7.1.0",
+    "semantic-ui-react": "^0.85.0"
+  }
+}

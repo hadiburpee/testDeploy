@@ -1,0 +1,21 @@
+.poster-main {
+    padding: 1%;
+}
+
+
+.images {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+#poster-container-home {
+    width: 90%;
+    margin: 3% auto 3% auto;
+}
+
+.poster-main {
+    width: 20%;
+}
+

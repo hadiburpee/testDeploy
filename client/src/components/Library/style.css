@@ -1,0 +1,14 @@
+.card {
+    border: none;
+}
+
+.img-poster {
+    display: block;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.poster-title {
+    color: black;
+}
